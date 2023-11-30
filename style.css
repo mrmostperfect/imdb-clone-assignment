@@ -1,0 +1,469 @@
+/* Resetting default margin and font-family, setting box-sizing and background color */
+body {  
+    margin: 0px;
+    font-family: 'Darker Grotesque', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* Setting margin for the container */
+container {
+    margin: 0;
+}
+
+/* Styling for the logo */
+.logo {
+    float: left;   
+}
+
+/* Styling for the logo image */
+.logo img {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 100px;
+}
+
+/* Styling for columns */
+.column {
+    float: left;
+    padding: 10px;
+    height: 450px; 
+}
+
+/* Left column width and right column width */
+.left {
+    width: 65%;
+}
+
+.right {
+    width: 30%;
+}
+
+/* Styling for right column heading */
+.right h3 {
+    margin-top: 0px;
+    color: yellow;
+}
+
+/* Clearing floats in the row */
+.row:after {	
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    .column.left {
+        height: 200px;
+    }
+}
+
+/* Styling for container1 */
+.container1 {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+/* Styling for container2 */
+.container2 {
+    width: 100%;
+    height: 130px;
+    padding:2px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Styling for images inside container2 */
+.container2 img {
+    width: 24%;
+    height: auto;
+    float: left;
+}
+
+/* Styling for point class within container2 */
+.point {
+    padding: 15px;
+    margin-left: 100px;
+    height: 100px;
+    position: relative;  
+    color: white;
+}
+
+/* Styling for Browse Trailers link */
+.Browse_link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for right column heading link */
+.right h3 a:hover {
+    color: yellow;
+}
+
+/* Styling for imagecontainer */
+.imagecontainer {
+    margin-top: 20px;
+    width: 80%;
+    height: 500px;
+    overflow-x: scroll;
+    background-color: black;
+    margin-left: auto;  
+    margin-right: auto;
+    padding: 10px;
+}   
+
+/* Styling for trending, now playing, top rated, upcoming sections */
+.trtitle {
+    color: yellow;
+    margin-left: 150px;
+}
+
+/* Styling for movie sections */
+#trend, #nowplay, #top, #upcom {
+    display: flex;
+    flex: 0 0 auto;   
+}
+
+/* Styling for individual movie sections */
+.to {
+    float: left;
+    width: 20%;
+    height: 450px;
+    max-height: auto;
+    background-color: #111;
+    margin-right: 20px;
+}
+
+/* Styling for images inside .to */
+.to img {
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Styling for text and button inside .to_indent */
+.to_indent {
+    text-align: center;
+    font-size: 20px;
+}
+
+.to button {
+    padding: 5px 23px 5px;
+    color: #5799ef;
+    background-color: #222;
+    border: 2px solid transparent;
+    border-radius: 5px;    
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1270px) {
+    .to {
+        width: 100%!important;
+    }
+
+    .imagecontainer {
+        width: 100%;
+    }
+
+    .trtitle {
+        margin-left: 30px;
+    }
+}
+
+/* Styling for the navigation menu */
+/* Resetting defaults and setting the background, padding, and border for the navigation bar */
+* {
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background: #222222;
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+}
+
+/* Styling for the navigation menu items */
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the navigation menu logo */
+nav ul li.logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Styling for the navigation menu items container */
+nav ul div.items {
+    padding: 0 25px;
+    display: inline-flex;
+}
+
+/* Styling for the navigation menu item links */
+nav ul div.items a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+/* Hover effect for the navigation menu item links */
+nav ul div.items a:hover {
+    color: cyan;
+}
+
+/* Styling for the search icon and input in the navigation menu */
+nav ul .search-icon {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+    float: left;    
+}
+
+nav ul .search-icon input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+nav ul .search-icon .icon {
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover {
+    background: #e6e6e6;
+}
+
+nav ul .search-icon .icon span {
+    color: #222222;
+    font-size: 18px;
+}
+
+/* Styling for the menu button in smaller screens */
+nav ul li.btn {
+    font-size: 29px;
+    flex: 1;
+    padding: 0 40px;
+    display: none;
+}
+
+/* Styling for the menu button icon */
+nav ul li.btn span {
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #151515;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the menu button icon when active */
+nav ul li.btn span.show:before {
+    content: '\f00d';
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1052px) {
+    nav {
+        padding: 10px 40px 10px 0px;
+    }
+
+    nav ul li.logo {
+        display: none;
+    }
+
+    nav ul div.items {
+        flex: 4;
+    }
+}
+
+/* Responsive design for even smaller screens */
+@media screen and (max-width: 800px) {
+    nav ul li.btn {
+        display: block;
+    }
+
+    nav {
+        z-index: 1;
+        padding: 9px 40px 9px 0;
+    }
+
+    nav ul div.items {
+        z-index: -1;
+        position: fixed;
+        top: -220px;
+        right: 0;
+        width: 100%;
+        background: #222222;
+        display: inline-block;
+        transition: top .4s;
+    }
+
+    nav ul div.items.show {
+        top: 60px;
+    }
+
+    nav ul div.items li {
+        text-align: center;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+
+    nav ul div.items li a {
+        font-size: 19px;
+    }
+}
+
+/* Responsive design for very small screens */
+@media screen and (max-width: 405px) {
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav ul li.search {
+        width: 50vmin;
+    }
+
+    nav ul li input {
+        width: 40vmin;
+    }
+
+    nav ul li .search-icon {
+        width: 10vmin;
+    }
+}
+
+/* Styling for content section */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 40px;
+    z-index: -2;
+}
+
+/* Styling for text inside content section */
+.content .text {
+    font-size: 40px;
+    font-weight: 800;
+    padding: 5px 0;
+    color: #202020;
+}
+
+/* Styling for paragraphs inside content section */
+.content .p {
+    font-size: 28px;
+    font-weight: 600;
+    color: #202020;
+}
+
+/* Styling for navigation menu items container when shown */
+.items.show {
+    z-index: 999;
+}        
+    
+/* Styling for the feature section */
+.feature {
+    margin: 50px auto 20px;
+    width: 80%;
+    height: 350px;
+}
+
+/* Styling for individual feature items */
+.today {
+    float: left;
+    padding: 20px;
+    width: 30%;
+    height: 250px; 
+}
+
+/* Styling for feature section heading */
+.feature h1 {
+    color: yellow;    
+}
+
+/* Styling for images inside feature items */
+.today img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Styling for links inside feature items */
+.today a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for links inside feature items */
+.today a:hover {
+    color: grey;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) { 
+    .today {
+        width: 100%;
+    }
+}
+
+/* Styling for overlay */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Styling for text inside overlay */
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
